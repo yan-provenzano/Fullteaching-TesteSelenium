@@ -33,9 +33,6 @@ public class NovaSecaoCurso {
 
 	@Test
 	public void test() throws InterruptedException {
-		PageConexaoNaoSegura pageConexaoNaoSegura = PageFactory.initElements(driver, PageConexaoNaoSegura.class);
-		pageConexaoNaoSegura.avancaPagina();
-		
 		WebElement clicaLogin = driver.findElement(By.xpath("//*[@id=\"navigation-bar\"]/div/ul/li[2]/a"));
 		clicaLogin.click();
 		Thread.sleep(3000);
